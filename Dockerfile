@@ -1,5 +1,5 @@
 FROM node:23-alpine
-
+RUN apk add --no-cache nginx
 EXPOSE 8080
 WORKDIR /app
 COPY package.json .
